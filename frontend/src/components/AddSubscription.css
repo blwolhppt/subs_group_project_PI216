@@ -1,0 +1,78 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  padding: 15px;
+}
+
+.form-container {
+  box-sizing: border-box;
+  width: 600px;
+  border-width: 10px;
+  padding: 30px;
+  z-index: 0;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.subs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.subscription-title-input {
+  outline: none;
+  border: none;
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.subscription-title-input::placeholder {
+  font-weight: lighter;
+  color: lightgrey;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.categories-data .choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6px;
+  overflow: scroll;
+  max-height: 183px;
+}
+
+.sub-category {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  background-color: #8047b9;
+  color: white; 
+}
+
+.sub-category.add:hover {
+  background-color: #a15fe3;
+  color: white; 
+}
+
+input.category-checkbox {
+  background-color: transparent;
+}
+
+.sub-category:has(input.category-checkbox:checked){
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  padding: 5px;
+  transition: background-color 0.2s;
+}
